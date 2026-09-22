@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Destinations | DEXDEV AIRLINE</title>
+</head>
+
+<body class="bg-slate-50 text-violet-950">
+
+  <!-- NAVBAR -->
+  <header class="bg-violet-950 text-white">
+    <nav class="max-w-7xl mx-auto px-6 py-6">
+      <div class="flex items-center justify-between">
+        <p class="text-2xl font-bold">
+          DEXDEV <span class="text-orange-400">AIRLINE</span>
+        </p>
+
+        <div class="hidden md:flex items-center gap-8">
+
+          <a href="/dexdev_airlline.html" class="hover:text-orange-400">Home</a>
+          <a href="/destinations.html" class="text-orange-400">Destinations</a>
+          <a href="/services.html" class="hover:text-orange-400">Services</a>
+          <a href="/about.html" class="hover:text-orange-400">About</a>
+          <a href="/contact.html" class="hover:text-orange-400">Contact</a>
+
+          <button class="bg-orange-400 text-violet-950 px-5 py-2 rounded-full font-semibold">
+            <a href="/bookings.html"></a>Book Flight
+          </button>
+
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-3xl" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden mt-6 space-y-4 pb-4">
+        <a href="/dexdev_airlline.html" class="block hover:text-orange-400">Home</a>
+        <a href="/destinations.html" class="block text-orange-400">Destinations</a>
+        <a href="/services.html" class="block hover:text-orange-400">Services</a>
+        <a href="/about.html" class="block hover:text-orange-400">About</a>
+        <a href="/contact.html" class="block hover:text-orange-400">Contact</a>
+        <a href="#" class="inline-block bg-orange-400 text-violet-950 px-5 py-2 rounded-full font-semibold">
+          Book Flight
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="bg-violet-950 text-white px-6 pt-16 pb-28 text-center">
+    <p class="text-orange-400 uppercase tracking-[0.3em] text-sm font-semibold">
+      Discover the world
+    </p>
+
+    <h1 class="text-4xl md:text-6xl font-serif mt-4">
+      Explore Our Destinations
+    </h1>
+
+    <p class="max-w-2xl mx-auto text-violet-200 mt-6 leading-relaxed">
+      From beautiful cities to peaceful islands, discover places that make
+      every journey memorable with DEXDEV AIRLINE.
+    </p>
+  </section>
+
+  <!-- DESTINATION CARDS -->
+  <main class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-10">
+      <div>
+        <p class="text-orange-500 font-semibold uppercase tracking-widest text-sm">
+          Travel inspiration
+        </p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">
+          Popular Destinations
+        </h2>
+      </div>
+
+      <p class="text-gray-500 max-w-md">
+        Choose your next adventure and experience a new side of the world.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <!-- PARIS -->
+      <article class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+        <div class="relative h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80"
+            alt="Paris, France" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute top-5 left-5 bg-white text-violet-950 px-4 py-2 rounded-full text-sm font-semibold">
+            Europe
+          </span>
+        </div>
+        <div class="p-6">
+          <p class="text-orange-500 text-sm font-semibold">
+            <i class="fa-solid fa-location-dot mr-2"></i>France
+          </p>
+          <h3 class="text-2xl font-bold mt-2">Paris</h3>
+          <p class="text-gray-500 mt-3">
+            Discover iconic landmarks, beautiful streets, art, and unforgettable city views.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 mt-5 font-semibold text-violet-950 hover:text-orange-500">
+            Explore destination <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- SANTORINI -->
+      <article class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+        <div class="relative h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1000&q=80"
+            alt="Santorini, Greece" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute top-5 left-5 bg-white text-violet-950 px-4 py-2 rounded-full text-sm font-semibold">
+            Europe
+          </span>
+        </div>
+        <div class="p-6">
+          <p class="text-orange-500 text-sm font-semibold">
+            <i class="fa-solid fa-location-dot mr-2"></i>Greece
+          </p>
+          <h3 class="text-2xl font-bold mt-2">Santorini</h3>
+          <p class="text-gray-500 mt-3">
+            Enjoy peaceful island views, blue rooftops, and unforgettable sunsets.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 mt-5 font-semibold text-violet-950 hover:text-orange-500">
+            Explore destination <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- NEW YORK -->
+      <article class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+        <div class="relative h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1000&q=80"
+            alt="New York, USA" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute top-5 left-5 bg-white text-violet-950 px-4 py-2 rounded-full text-sm font-semibold">
+            America
+          </span>
+        </div>
+        <div class="p-6">
+          <p class="text-orange-500 text-sm font-semibold">
+            <i class="fa-solid fa-location-dot mr-2"></i>United States
+          </p>
+          <h3 class="text-2xl font-bold mt-2">New York</h3>
+          <p class="text-gray-500 mt-3">
+            Experience a lively city filled with culture, lights, business, and adventure.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 mt-5 font-semibold text-violet-950 hover:text-orange-500">
+            Explore destination <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- BALI -->
+      <article class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+        <div class="relative h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80"
+            alt="Bali, Indonesia" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute top-5 left-5 bg-white text-violet-950 px-4 py-2 rounded-full text-sm font-semibold">
+            Asia
+          </span>
+        </div>
+        <div class="p-6">
+          <p class="text-orange-500 text-sm font-semibold">
+            <i class="fa-solid fa-location-dot mr-2"></i>Indonesia
+          </p>
+          <h3 class="text-2xl font-bold mt-2">Bali</h3>
+          <p class="text-gray-500 mt-3">
+            Escape to tropical scenery, peaceful beaches, and refreshing adventures.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 mt-5 font-semibold text-violet-950 hover:text-orange-500">
+            Explore destination <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- DUBAI -->
+      <article class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+        <div class="relative h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80"
+            alt="Dubai, United Arab Emirates"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute top-5 left-5 bg-white text-violet-950 px-4 py-2 rounded-full text-sm font-semibold">
+            Middle East
+          </span>
+        </div>
+        <div class="p-6">
+          <p class="text-orange-500 text-sm font-semibold">
+            <i class="fa-solid fa-location-dot mr-2"></i>UAE
+          </p>
+          <h3 class="text-2xl font-bold mt-2">Dubai</h3>
+          <p class="text-gray-500 mt-3">
+            Explore modern architecture, luxury experiences, and exciting city life.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 mt-5 font-semibold text-violet-950 hover:text-orange-500">
+            Explore destination <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- CAPE TOWN -->
+      <article class="bg-white rounded-3xl overflow-hidden shadow-lg group">
+        <div class="relative h-72 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1000&q=80"
+            alt="Cape Town, South Africa"
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <span class="absolute top-5 left-5 bg-white text-violet-950 px-4 py-2 rounded-full text-sm font-semibold">
+            Africa
+          </span>
+        </div>
+        <div class="p-6">
+          <p class="text-orange-500 text-sm font-semibold">
+            <i class="fa-solid fa-location-dot mr-2"></i>South Africa
+          </p>
+          <h3 class="text-2xl font-bold mt-2">Cape Town</h3>
+          <p class="text-gray-500 mt-3">
+            Discover dramatic mountains, beautiful coastlines, and natural wonders.
+          </p>
+          <a href="#" class="inline-flex items-center gap-2 mt-5 font-semibold text-violet-950 hover:text-orange-500">
+            Explore destination <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section class="bg-orange-400 px-6 py-16 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-violet-950">
+      Ready for your next journey?
+    </h2>
+    <p class="text-violet-900 mt-4">
+      Plan your trip and let DEXDEV AIRLINE take you further.
+    </p>
+    <a href="/bookings.html"
+      class="inline-block mt-7 bg-violet-950 text-white px-7 py-3 rounded-full font-semibold hover:bg-violet-900 transition">
+      Book Your Flight
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-violet-950 text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- FOOTER GRID -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- BRAND -->
+        <div>
+          <p class="text-2xl font-bold">
+            DEXDEV <span class="text-orange-400">AIRLINE</span>
+          </p>
+
+          <p class="text-violet-200 mt-5 leading-relaxed">
+            Your trusted travel partner, connecting you
+            to amazing destinations around the world.
+          </p>
+
+          <p class="text-orange-400 font-semibold mt-5">
+            DEXDEV AIRLINE <i class="fa-solid fa-plane"></i>
+          </p>
+
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div>
+
+          <h3 class="text-lg font-bold">
+            Quick Links
+          </h3>
+
+          <ul class="mt-5 space-y-3 text-violet-200">
+            <li>
+              <a href="/dexdev_airlline.html" class="hover:text-orange-400 transition">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="destinations.html" class="hover:text-orange-400 transition">
+                Destinations
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html" class="hover:text-orange-400 transition">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html" class="hover:text-orange-400 transition">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div>
+          <h3 class="text-lg font-bold">
+            Services
+          </h3>
+          <ul class="mt-5 space-y-3 text-violet-200">
+            <li>Flight Booking</li>
+            <li>Hotel Booking</li>
+            <li>Travel Packages</li>
+            <li>Customer Support</li>
+
+          </ul>
+
+        </div>
+        <!-- CONTACT -->
+        <div>
+
+          <h3 class="text-lg font-bold">
+            Contact Us
+          </h3>
+
+          <ul class="mt-5 space-y-4 text-violet-200">
+
+            <li>
+              <i class="fa-solid fa-location-dot mr-2"></i> Lagos, Nigeria
+            </li>
+
+            <li>
+              <i class="fa-solid fa-envelope mr-2"></i> hello@dexdevairline.com
+            </li>
+
+            <li>
+              <i class="fa-solid fa-phone mr-2"></i> +234 800 000 0000
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="border-t border-violet-800 mt-14 pt-8">
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+
+          <p class="text-violet-300 text-sm">
+            © 2026 DEXDEV AIRLINE. All rights reserved.
+          </p>
+
+          <div class="flex gap-6 text-sm text-violet-300">
+
+            <a href="#" class="hover:text-orange-400">
+              Privacy Policy
+            </a>
+
+            <a href="#" class="hover:text-orange-400">
+              Terms & Conditions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+
+      const isOpen = !mobileMenu.classList.contains("hidden");
+      menuBtn.setAttribute("aria-expanded", isOpen);
+      menuBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+  </script>
+
+</body>
+
+</html>
